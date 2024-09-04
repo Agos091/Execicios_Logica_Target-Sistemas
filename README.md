@@ -52,11 +52,13 @@ Exemplo de JSON para Análise de Faturamento:
 
 json
 Copiar código
+
 [
   { "dia": 1, "valor": 1000 },
   { "dia": 2, "valor": 2000 },
   { "dia": 3, "valor": 3000 }
 ]
+
 Estrutura do Código
 Program.cs
 Contém a lógica principal do projeto, incluindo um menu interativo que chama funções específicas para cada exercício.
