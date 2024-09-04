@@ -2,10 +2,16 @@ Exercícios de Lógica em C#
 Este projeto contém uma série de exercícios de lógica implementados em C#. Ele permite ao usuário resolver questões que envolvem soma, sequência de Fibonacci, análise de faturamento, cálculo percentual por estado e manipulação de strings. O projeto foi desenvolvido com uma interface de menu para selecionar e executar cada uma das questões individualmente.
 
 Estrutura do Projeto
-Exercicios_Logica/ ├── Program.cs
+Exercicios_Logica/ 
+
+├── Program.cs
+
 ├── Exercicios_Logica.sln
+
 ├── README.md
+
 ├── packages.config
+
 
 Funcionalidades
 Cálculo de SOMA: Realiza a soma dos números de 1 a 13.
@@ -14,6 +20,7 @@ Análise de Faturamento Diário: Calcula o menor, maior e os dias de faturamento
 Cálculo Percentual de Faturamento por Estado: Calcula o percentual de contribuição de cada estado em relação ao faturamento total.
 Inversão de String: Inverte os caracteres de uma string fornecida pelo usuário.
 Pré-requisitos
+
 .NET SDK (5.0 ou superior)
 Pacote Newtonsoft.Json (para manipulação de JSON)
 Como Executar
@@ -21,8 +28,11 @@ Passo 1: Clonar o repositório
 Clone o repositório em sua máquina local:
 
 bash
+
 Copiar código
+
 git clone https://github.com/seuusuario/Exercicios_Logica.git
+
 Navegue até a pasta do projeto:
 
 bash
@@ -35,12 +45,19 @@ Ou instale via terminal com o seguinte comando:
 
 bash
 Copiar código
+
 Install-Package Newtonsoft.Json
+
 Passo 3: Executar o programa
+
 Abra o projeto no Visual Studio.
+
 Compile o projeto clicando em Build.
+
 Execute o projeto. Será exibido um menu no console onde você pode escolher qual exercício executar.
+
 Como Usar
+
 Menu Principal:
 
 O programa apresenta um menu com 6 opções.
@@ -51,11 +68,14 @@ Algumas questões, como análise de faturamento e Fibonacci, solicitam a entrada
 Exemplo de JSON para Análise de Faturamento:
 
 json
-Copiar código
+
+código
 
 [
   { "dia": 1, "valor": 1000 },
+  
   { "dia": 2, "valor": 2000 },
+  
   { "dia": 3, "valor": 3000 }
 ]
 
@@ -63,12 +83,17 @@ Estrutura do Código
 Program.cs
 Contém a lógica principal do projeto, incluindo um menu interativo que chama funções específicas para cada exercício.
 As funções implementam os cálculos de SOMA, Fibonacci, faturamento e inversão de string.
+
 Possíveis Erros
 Erro de dependência Newtonsoft.Json: Se o pacote Newtonsoft.Json não estiver instalado corretamente, certifique-se de que o pacote foi adicionado ao projeto.
 Erro de conversão de JSON: Verifique o formato do JSON fornecido para garantir que ele siga a estrutura esperada.
+
 Autor
+
 Nome: Agos Dalcin Rufino
+
 GitHub: https://github.com/Agos091
+
 LinkedIn: https://www.linkedin.com/in/agos-dalcin-rufino-a9913821a/
 
 Observações
