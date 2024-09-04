@@ -1,59 +1,77 @@
-﻿Exercícios de Lógica de Programação
-Este projeto contém uma série de exercícios de lógica de programação implementados em C#. O objetivo é fornecer soluções para problemas comuns de programação e cálculo, incluindo soma, verificação de sequência de Fibonacci, análise de faturamento, cálculo de percentuais por estado, e manipulação de strings.
+Exercícios de Lógica em C#
+Este projeto contém uma série de exercícios de lógica implementados em C#. Ele permite ao usuário resolver questões que envolvem soma, sequência de Fibonacci, análise de faturamento, cálculo percentual por estado e manipulação de strings. O projeto foi desenvolvido com uma interface de menu para selecionar e executar cada uma das questões individualmente.
+
+Estrutura do Projeto
+Exercicios_Logica/ ├── Program.cs
+├── Exercicios_Logica.sln
+├── README.md
+├── packages.config
 
 Funcionalidades
-O programa apresenta um menu interativo onde o usuário pode escolher qual exercício deseja executar. As funcionalidades incluem:
-
-Cálculo de SOMA: Calcula a soma de valores de 1 até 13.
-Verificação de Fibonacci: Verifica se um número informado pertence à sequência de Fibonacci.
-Análise de Faturamento Diário: Calcula o menor, maior e média de faturamento diário a partir de dados em formato JSON.
-Cálculo Percentual de Faturamento por Estado: Calcula o percentual de faturamento de cada estado com base nos valores inseridos pelo usuário.
+Cálculo de SOMA: Realiza a soma dos números de 1 a 13.
+Verificação de Fibonacci: Verifica se um número pertence à sequência de Fibonacci.
+Análise de Faturamento Diário: Calcula o menor, maior e os dias de faturamento acima da média, recebendo os dados de faturamento em formato JSON.
+Cálculo Percentual de Faturamento por Estado: Calcula o percentual de contribuição de cada estado em relação ao faturamento total.
 Inversão de String: Inverte os caracteres de uma string fornecida pelo usuário.
-Tecnologias Utilizadas
-Linguagem: C#
-Biblioteca para manipulação de JSON: Newtonsoft.Json
-Requisitos
-.NET SDK (pelo menos a versão 5.0 ou superior)
-Visual Studio ou outro IDE compatível com C#
-Pacote Newtonsoft.Json para manipulação de dados JSON. Se não estiver instalado, siga as instruções abaixo.
-Instalação
-Clone o repositório:
+Pré-requisitos
+.NET SDK (5.0 ou superior)
+Pacote Newtonsoft.Json (para manipulação de JSON)
+Como Executar
+Passo 1: Clonar o repositório
+Clone o repositório em sua máquina local:
 
 bash
 Copiar código
-git clone https://github.com/seuusuario/Execicios_Logica.git
-Instale o pacote Newtonsoft.Json:
+git clone https://github.com/seuusuario/Exercicios_Logica.git
+Navegue até a pasta do projeto:
 
-No Visual Studio: Vá até Gerenciar Pacotes NuGet e procure por Newtonsoft.Json, depois clique em Instalar.
-Via terminal com o NuGet CLI:
+bash
+Copiar código
+cd Exercicios_Logica
+Passo 2: Instalar dependências
+Abra o NuGet Package Manager no Visual Studio e instale o pacote Newtonsoft.Json.
+
+Ou instale via terminal com o seguinte comando:
+
 bash
 Copiar código
 Install-Package Newtonsoft.Json
-Compile o projeto: Abra o projeto no Visual Studio e clique em Build para compilar o projeto.
+Passo 3: Executar o programa
+Abra o projeto no Visual Studio.
+Compile o projeto clicando em Build.
+Execute o projeto. Será exibido um menu no console onde você pode escolher qual exercício executar.
+Como Usar
+Menu Principal:
 
-Como Executar
-Após a instalação e compilação, execute o programa.
-O menu será exibido com as seguintes opções:
-1: Cálculo de SOMA
-2: Verificar número na sequência de Fibonacci
-3: Cálculo de faturamento diário
-4: Cálculo de percentual de faturamento por estado
-5: Inversão de uma string
-6: Sair
-Digite o número da opção que deseja executar e siga as instruções para fornecer os inputs necessários.
-Exemplo de Uso
-Verificação de Fibonacci
-Escolha a opção 2.
-Informe um número, como 21.
-O programa retornará se o número pertence ou não à sequência de Fibonacci.
-Análise de Faturamento
-Escolha a opção 3.
-Insira um JSON com os valores de faturamento diário. Exemplo:
+O programa apresenta um menu com 6 opções.
+O usuário pode escolher entre as opções para calcular a soma, verificar Fibonacci, analisar faturamento ou inverter uma string.
+Entrada de Dados:
+
+Algumas questões, como análise de faturamento e Fibonacci, solicitam a entrada de dados pelo usuário.
+Exemplo de JSON para Análise de Faturamento:
+
 json
 Copiar código
 [
   { "dia": 1, "valor": 1000 },
-  { "dia": 2, "valor": 0 },
+  { "dia": 2, "valor": 2000 },
   { "dia": 3, "valor": 3000 }
 ]
-O programa retornará o menor e maior valor de faturamento, e quantos dias ficaram acima da média.
+Estrutura do Código
+Program.cs
+Contém a lógica principal do projeto, incluindo um menu interativo que chama funções específicas para cada exercício.
+As funções implementam os cálculos de SOMA, Fibonacci, faturamento e inversão de string.
+Possíveis Erros
+Erro de dependência Newtonsoft.Json: Se o pacote Newtonsoft.Json não estiver instalado corretamente, certifique-se de que o pacote foi adicionado ao projeto.
+Erro de conversão de JSON: Verifique o formato do JSON fornecido para garantir que ele siga a estrutura esperada.
+Autor
+Nome: Agos Dalcin Rufino
+GitHub: https://github.com/Agos091
+LinkedIn: https://www.linkedin.com/in/agos-dalcin-rufino-a9913821a/
+
+Observações
+Certifique-se de que as dependências estão instaladas corretamente. O projeto foi testado com .NET 5.0 e Visual Studio 2022. Se você encontrar algum problema, sinta-se à vontade para abrir uma issue ou enviar um pull request no repositório.
+
+Obrigado pela oportunidade.
+Att, Agos Dalcin Rufino
+
